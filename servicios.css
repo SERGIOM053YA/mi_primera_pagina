@@ -1,0 +1,252 @@
+/* Añadir una nueva fuente moderna */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Cambiar a un fondo más neutro */
+    color: #333;
+}
+
+/* Ajustar el menú */
+/*Menu*/
+.menu{
+    color:#40e0d0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 180px;
+}
+
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1{
+    width: 0;
+}
+
+.logo-2{
+    width: 150px;
+}
+
+.socials{
+    display: flex;
+}
+
+.social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40;
+    border: 1px solid #DB241B;
+    border-radius: 50%;
+}
+
+.social:hover{
+    background-color: #DB241B;
+}
+
+.social img{
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #f9f9f9;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #DB241B;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.menu{
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.menu-2{
+    display: none;
+}
+
+.logo-1{
+    width: 100px;
+}
+
+.logo-2{
+    width: 0;
+}
+
+.menu label{
+    display: initial;
+}
+
+.menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #181818;
+    display: none;
+}
+
+.menu .navbar ul li{
+    width: 100%;
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+}
+
+
+
+/* Estilos de botones */
+.cta-button {
+    background-color: #40e0d0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #20b2aa;
+}
+
+/* Modernizar el layout de servicios */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Añadir efecto de elevación */
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 15px;
+}
+
+.footer {
+    background-color: #181818;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer img.logo-2 {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer .links {
+    margin-bottom: 20px;
+}
+
+.footer .links h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .links a {
+    color: #40e0d0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .links a:hover {
+    color: #fff;
+}
+
+/* Mejorar las redes sociales */
+.social img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.social:hover img {
+    filter: grayscale(0%);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .menu .navbar ul {
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-2 {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
